@@ -4,6 +4,7 @@ Below you'll find information about performing common tasks. The most recent ver
 
 ## Table of Contents
 
+* [Info about the development](#info-about-the-development0)
 * [Updating to New Releases](#updating-to-new-releases)
 * [Available Scripts](#available-scripts)
   * [npm start](#npm-start)
@@ -26,6 +27,29 @@ Below you'll find information about performing common tasks. The most recent ver
   * [Networking](#networking)
   * [iOS Simulator won't open](#ios-simulator-wont-open)
   * [QR Code does not scan](#qr-code-does-not-scan)
+
+## Info about the development
+
+This project was tested on an **Android** device.
+
+**Main files**
+```
++--actions/   
+ |-- index.js - All redux actions are here
++-- components/
+ |-- AddDeck.js - View to add a deck
+ |-- AddQuestion.js - View to add a question to a deck 
+ |-- DeckHome.js - View to show info about a deck, and options to add a question, start the quiz and delete the deck
+ |-- Decks.js - View to show resume info for all decks in a list and to provide navigation to a single deck view (DeckHome)
+ |-- Quiz.js - View to show the quiz process: questions, answers, result
++-- reducers/
+ |-- index.js - All redux reducers are here
++-- utils/
+ |-- api.js - functions to interact with AsyncStorage
+ |-- colors.js - basic colors used throughout the app
+ |-- helpers.js - functions to interact with Notifications
++-- App.js - The root component for the app
+```
 
 ## Updating to New Releases
 
